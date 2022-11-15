@@ -42,7 +42,7 @@ def main():
     timeElapsed = False
     print("Simulated Annealing implementation for solving the 8-queens problem")
 
-    # Setting up the chess board, the variable current is used to store the current chess board configuration
+    # Setting up the chess board, the variable cur_sol is used to store the current chess board configuration
     for i in range(0, 8):
         position = random.randint(0, 7)  # generate a real number in the range [0, 7]
         cur_sol.append(position)
