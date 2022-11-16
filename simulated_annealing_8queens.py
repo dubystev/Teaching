@@ -105,7 +105,7 @@ def compute_value(chess_board):  # compute the heuristic function value of the c
     return h_value
 
 
-def sa_accept(eval, eval_0):
+def sa_accept(eval, eval_0):  # implemented from a paper by Adriaensen, S., Brys, T., & Nowé, A. (2014)
     global n_impr_SA, avg_impr_SA
     global execTime, elapsedTime
     impr = eval_0 - eval
