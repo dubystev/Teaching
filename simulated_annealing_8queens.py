@@ -18,8 +18,8 @@ global cur_sol, next_sol
 SA_temp = 0.2  # the temperature parameter (t); it is the schedule input and it determines the rate of acceptance of (worse) solutions
 '''
 Try to vary the value of SA_temp, don't try to go beyond the value 1.0 and also avoid setting a value of 0.0 and below
-What do you observe if the value is very low, for example 0.01? Try to run the SA algorithm for at least 20 times,
-what do you observe from these runs? Compare your observation with another observation if you run the SA algorithm with
+What do you observe if the value is very low, for example 0.01? Try to run the SA algorithm for at least 20 times with SA_temp = 0.01.
+What do you observe from these runs? Compare your observation with another observation if you run the SA algorithm with
 SA_temp value of 1.0. 
 '''
 
