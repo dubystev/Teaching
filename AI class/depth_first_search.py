@@ -62,5 +62,5 @@ if __name__ == "__main__":
     if value == -1:
         print('Oops, search terminated with a failure')
     else:
-        print('Path returned by Breadth First Search can be seen below')
+        print('Path returned by Depth First Search can be seen below')
         print('{0}'.format(value.path))
