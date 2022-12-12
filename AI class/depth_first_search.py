@@ -21,7 +21,7 @@ def main():
             ["Timisoara", "Mehadia"], "Fagaras" : ["Sibiu", "Bucharest"], "Rimnicu Vilcea" : ["Sibiu", "Craiova",
             "Pitesti"], "Mehadia" : ["Lugoj", "Drobeta"], "Drobeta" : ["Mehadia", "Craiova"], "Craiova" : ["Drobeta",
             "Rimnicu Vilcea", "Pitesti"], "Pitesti" : ["Rimnicu Vilcea", "Bucharest", "Craiova"], "Bucharest" :
-            ["Pitesti", "Fagaras", "Giurgiu", "Urziceni"], "Giurgiu" : ["Bucharest",90], "Urziceni" : ["Bucharest",
+            ["Pitesti", "Fagaras", "Giurgiu", "Urziceni"], "Giurgiu" : ["Bucharest"], "Urziceni" : ["Bucharest",
             "Vaslui", "Hirsova"], "Hirsova" : ["Eforie", "Urziceni"], "Vaslui" : ["Iasi", "Urziceni"], "Eforie" :
             ["Hirsova"], "Iasi" : ["Neamt", "Vaslui"], "Neamt" : ["Iasi"]}
     return dfs()
