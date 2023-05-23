@@ -1,0 +1,5 @@
+C:\Users\hp\source\repos\Tic-Tac-Toe\obj\x86\Debug\Mini_Max_Tic_Tac_Toe.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\Tic-Tac-Toe\obj\x86\Debug\Tic_Tac_Toe.Form1.resources
+C:\Users\hp\source\repos\Tic-Tac-Toe\obj\x86\Debug\Mini_Max_Tic_Tac_Toe.Properties.Resources.resources
+C:\Users\hp\source\repos\Tic-Tac-Toe\obj\x86\Debug\Mini_Max_Tic_Tac_Toe.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\Tic-Tac-Toe\obj\x86\Debug\Mini_Max_Tic_Tac_Toe.csproj.CoreCompileInputs.cache
