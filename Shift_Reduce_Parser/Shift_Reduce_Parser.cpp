@@ -21,10 +21,10 @@ string input;
 map<pair<int, string>, string> action;
 map<pair<int, string>, int> Goto;
 
-/**
-* splits a string into word/tokens based on a delimiter
-* input := input string
-* delim := the delimiter
+/*
+splits a string into word/tokens based on a delimiter
+input := input string
+delim := the delimiter
 */
 vector<string> split(string input, char delim) {
     stringstream s(input);
@@ -139,7 +139,7 @@ void reduce(int rule_no) {
 
 int main()
 {
-    string expr = "id + id * id"; // change the value of the string to test for another expression
+    string expr = "id * (id * id)"; // change the value of the string to test for another expression
     cout << "***A Shift Reduce Parser in C++***\n";
 
     //read in the grammar rules
@@ -217,13 +217,13 @@ int main()
     string str_action = getAction();
     string msg;
     msg = (str_action[0] == 'S') ? "Shift " : "Reduce via rule ";
-    msg += str_action[1];
-    if (isdigit(str_action[1]))
+    msg += str_action.substr(1);
+    if (isnum(str_action.substr(1)))
         cout << "action: " << msg << endl;
     while (str_action != "accept" && str_action != "reject") {
         if (str_action[0] == 'S') { // to shift
             string arg = "";
-            arg += str_action[1];
+            arg += str_action.substr(1);
             shift(arg);
             cout << "STACK: ";
             printSTACK();
@@ -231,7 +231,7 @@ int main()
         }
         else { // to reduce
             string arg = "";
-            arg += str_action[1];
+            arg += str_action.substr(1);
             reduce(stoi(arg));
             cout << "STACK: ";
             printSTACK();
@@ -240,8 +240,8 @@ int main()
 
         str_action = getAction();
         msg = (str_action[0] == 'S') ? "Shift " : "Reduce via rule ";
-        msg += str_action[1];
-        if(isdigit(str_action[1]))
+        msg += str_action.substr(1);
+        if(isnum(str_action.substr(1)))
             cout << "action: " << msg<<endl;
     }
 
