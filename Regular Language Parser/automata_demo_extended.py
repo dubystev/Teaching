@@ -3,7 +3,7 @@ num_stars_read = 0  # determines what to process next
 trans_func_end_flag = False  # signifies the end of transition function definition in the file
 file_path = 'model2.txt'
 
-trans_func = {}  # We define an empty to store data about the transition function
+trans_func = {}  # We define an empty dictionary to store data about the transition function
 final_states = []  # We define a list of final states, empty at first.
 
 # Open the file in read mode ('r')
