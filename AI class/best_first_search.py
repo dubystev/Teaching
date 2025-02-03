@@ -15,8 +15,8 @@ global frontier
 
 def main():
     global graph, initial_state, goal_state
-    initial_state = "Drobeta"  # to try the algorithm on a new scenario, change the initial state
-    goal_state = "Fagaras"  # to try the algorithm on a new scenario, change the goal state
+    initial_state = "Arad"  # to try the algorithm on a new scenario, change the initial state
+    goal_state = "Bucharest"  # to try the algorithm on a new scenario, change the goal state
     graph = {"Oradea" : [("Zerind",71), ("Sibiu",151)], "Zerind" : [("Oradea",71), ("Arad",75)], "Arad" : [("Zerind",75),
             ("Sibiu",140), ("Timisoara",118)], "Sibiu" : [("Oradea",151), ("Arad",140), ("Fagaras",99),
             ("Rimnicu Vilcea",80)], "Timisoara" : [("Arad",118), ("Lugoj",111)], "Lugoj" : [("Timisoara",111),
@@ -38,6 +38,7 @@ def best_first_search():
     reached = {initial_state: node}  # create a dictionary using the initial state of the problem
 
     while not frontier.isEmpty():
+        printF(frontier)
         node = frontier.pop()
         if node.state == goal_state:
             return node
@@ -46,8 +47,16 @@ def best_first_search():
             if s not in reached or child.priority < reached[s].priority:
                 reached[s] = child
                 frontier.push(child)
+        print()
     return -1
 
+
+def printF(frontier):
+    item = frontier.head
+    while(item is not None):
+        print(f'{item.state}: {item.path} ({item.priority})')
+        item = item.next
+    
 
 def expand(node):
     s = node.state
