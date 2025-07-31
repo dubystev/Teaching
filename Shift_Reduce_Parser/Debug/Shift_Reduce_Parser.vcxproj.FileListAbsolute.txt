@@ -1,2 +1,0 @@
-C:\Users\hp\source\repos\Shift_Reduce_Parser\Debug\Shift_Reduce_Parser.exe
-C:\Users\hp\source\repos\Shift_Reduce_Parser\Debug\Shift_Reduce_Parser.pdb
